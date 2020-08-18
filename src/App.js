@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
-import FormControl from 'react-bootstrap/FormControl';
 import './App.css';
+import CustomCell from './components/CustomCell.js'
+
 
 function App() {
-  const [text, setText] = useState("");
-  // const changeText = e => {
-  //   setText;
-  // };
-
   return (
     <div className="App">
-      <FormControl as="textarea" aria-label="With textarea" rows={10} onChange={e => setText(e.target.value)}/>
-      <text>{text}</text>
-
+      <CustomCell current></CustomCell>
     </div>
   );
 }
